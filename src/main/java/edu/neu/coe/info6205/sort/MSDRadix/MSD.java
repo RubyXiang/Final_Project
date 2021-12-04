@@ -87,18 +87,7 @@ public class MSD {
         return v.length() < w.length();
     }
 
-    /**
-     * Reads in a sequence of extended ASCII strings from standard input;
-     * MSDRadix.MSD radix sorts them;
-     * and prints them to standard output in ascending order.
-     *
-     * @param args the command-line arguments
-     */
-    public static void main(String[] args){
-        MSD msd = new MSD();
-        List<String> a = Input.readTxtFileIntoStringArrList("/Users/Evelyn/info_6205_final/shuffledChinese.txt");
-
-
+    public static void msdSort(List<String> a){
         String[] pinyin = new String[a.size()];
         int i = 0;
         Hanyu hanyu = new Hanyu();
@@ -106,7 +95,7 @@ public class MSD {
             pinyin[i++] = hanyu.getStringPinYin(name) + "," + i;
         }
 
-        msd.sort(pinyin);
+        sort(pinyin);
 
         for(String name : pinyin){
             int index = Integer.valueOf(name.split(",")[1]);
@@ -114,4 +103,16 @@ public class MSD {
         }
 
     }
+
+    public static void inputAndSort(){
+        List<String> input = Input.readTxtFileIntoStringArrList("shuffledChinese.txt");
+        msdSort(input);
+    }
+
+    /**
+    public static void main(String[] args){
+        MSD msd = new MSD();
+        msd.inputAndSort();
+    }
+     **/
 }
