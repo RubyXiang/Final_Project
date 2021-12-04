@@ -26,8 +26,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/info6205.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/info6205.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/sort/MSDRadix/MSD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/sort/MSDRadix/MSD.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/util/sort_BenchmarkTimer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/util/sort_BenchmarkTimer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/neu/coe/info6205/sort/MSDRadix/MSD.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/neu/coe/info6205/sort/MSDRadix/MSD.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/neu/coe/info6205/util/sort_BenchmarkTimer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/neu/coe/info6205/util/sort_BenchmarkTimer.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,13 +37,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
-      </MavenGeneralSettings>
-    </option>
   </component>
   <component name="ProjectId" id="1zLPmFZR58NoePJxpp5i6v5lh2F" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -70,7 +64,18 @@
       <recent name="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/sort" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MSD">
+  <component name="RunManager" selected="Application.sort_BenchmarkTimer">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MSD" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.neu.coe.info6205.sort.MSDRadix.MSD" />
       <module name="INFO6205" />
@@ -98,10 +103,10 @@
       </method>
     </configuration>
     <configuration name="sort_BenchmarkTimer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-16" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="edu.neu.coe.info6205.util.sort_BenchmarkTimer" />
-      <module name="INFO6205" />
+      <module name="info_6205_finalProject" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="edu.neu.coe.info6205.util.*" />
@@ -112,21 +117,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MSD" />
         <item itemvalue="Application.sort_BenchmarkTimer" />
+        <item itemvalue="Application.MSD" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -164,39 +158,10 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Encapsulation" />
     <option name="LAST_COMMIT_MESSAGE" value="Encapsulation" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="295" y="-937" key="#Project_Structure" timestamp="1638580746372">
-      <screen x="-263" y="-1055" width="1920" height="1055" />
-    </state>
-    <state x="295" y="-937" key="#Project_Structure/46.25.1394.875/-263.-1055.1920.1055@-263.-1055.1920.1055" timestamp="1638580746372" />
-    <state width="1351" height="228" key="GridCell.Tab.0.bottom" timestamp="1638582000239">
-      <screen x="-263" y="-1055" width="1920" height="1055" />
-    </state>
-    <state width="1351" height="228" key="GridCell.Tab.0.bottom/46.25.1394.875/-263.-1055.1920.1055@-263.-1055.1920.1055" timestamp="1638582000239" />
-    <state width="1351" height="228" key="GridCell.Tab.0.center" timestamp="1638582000238">
-      <screen x="-263" y="-1055" width="1920" height="1055" />
-    </state>
-    <state width="1351" height="228" key="GridCell.Tab.0.center/46.25.1394.875/-263.-1055.1920.1055@-263.-1055.1920.1055" timestamp="1638582000238" />
-    <state width="1351" height="228" key="GridCell.Tab.0.left" timestamp="1638582000237">
-      <screen x="-263" y="-1055" width="1920" height="1055" />
-    </state>
-    <state width="1351" height="228" key="GridCell.Tab.0.left/46.25.1394.875/-263.-1055.1920.1055@-263.-1055.1920.1055" timestamp="1638582000237" />
-    <state width="1351" height="228" key="GridCell.Tab.0.right" timestamp="1638582000238">
-      <screen x="-263" y="-1055" width="1920" height="1055" />
-    </state>
-    <state width="1351" height="228" key="GridCell.Tab.0.right/46.25.1394.875/-263.-1055.1920.1055@-263.-1055.1920.1055" timestamp="1638582000238" />
-    <state x="295" y="-937" key="SettingsEditor" timestamp="1638580732335">
-      <screen x="-263" y="-1055" width="1920" height="1055" />
-    </state>
-    <state x="295" y="-937" key="SettingsEditor/46.25.1394.875/-263.-1055.1920.1055@-263.-1055.1920.1055" timestamp="1638580732335" />
-    <state x="407" y="-779" key="Vcs.Push.Dialog.v2" timestamp="1638580162926">
-      <screen x="-263" y="-1055" width="1920" height="1055" />
-    </state>
-    <state x="407" y="-779" key="Vcs.Push.Dialog.v2/46.25.1394.875/-263.-1055.1920.1055@-263.-1055.1920.1055" timestamp="1638580162926" />
   </component>
 </project>
