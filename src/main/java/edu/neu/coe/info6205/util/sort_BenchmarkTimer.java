@@ -65,7 +65,7 @@ public class sort_BenchmarkTimer {
 
         Consumer<List<String>> consumer_lsd= array->lsd.lsdSort(array);
         Benchmark_Timer<List<String>> benchmarkTimer_lsd = new Benchmark_Timer<List<String>>("LSD radix sort", consumer_lsd);
-        int m = 10;
+
         System.out.println("LSD sort time taken: " + benchmarkTimer_lsd.runFromSupplier(supplier_quarter, m) + " with 250k names");
         System.out.println("LSD sort time taken: " + benchmarkTimer_lsd.runFromSupplier(supplier_half, m) + " with 500k names");
         System.out.println("LSD sort time taken: " + benchmarkTimer_lsd.runFromSupplier(supplier_origin, m) + " with 1M names");
@@ -78,7 +78,7 @@ public class sort_BenchmarkTimer {
 
         Consumer<List<String>> consumer_dp= array->dp.dpSort(array);
         Benchmark_Timer<List<String>> benchmarkTimer_dp = new Benchmark_Timer<List<String>>("Dual-pivot Quicksort", consumer_dp);
-        int m = 10;
+
         System.out.println("Dual-pivot Quicksort time taken: " + benchmarkTimer_dp.runFromSupplier(supplier_quarter, m) + " with 250k names");
         System.out.println("Dual-pivot Quicksort time taken: " + benchmarkTimer_dp.runFromSupplier(supplier_half, m) + " with 500k names");
         System.out.println("Dual-pivot Quicksort time taken: " + benchmarkTimer_dp.runFromSupplier(supplier_origin, m) + " with 1M names");
@@ -91,7 +91,7 @@ public class sort_BenchmarkTimer {
 
         Consumer<List<String>> consumer_tim= array->tim.timSort(array);
         Benchmark_Timer<List<String>> benchmarkTimer_tim = new Benchmark_Timer<List<String>>("Timsort", consumer_tim);
-        int m = 10;
+
         System.out.println("Timsort time taken: " + benchmarkTimer_tim.runFromSupplier(supplier_quarter, m) + " with 250k names");
         System.out.println("Timsort time taken: " + benchmarkTimer_tim.runFromSupplier(supplier_half, m) + " with 500k names");
         System.out.println("Timsort time taken: " + benchmarkTimer_tim.runFromSupplier(supplier_origin, m) + " with 1M names");
