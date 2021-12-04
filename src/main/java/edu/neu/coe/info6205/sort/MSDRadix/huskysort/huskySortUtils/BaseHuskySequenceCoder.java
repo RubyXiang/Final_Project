@@ -3,7 +3,8 @@ package edu.neu.coe.info6205.sort.MSDRadix.huskysort.huskySortUtils;
 /**
  * Base Husky sequence coder.
  */
-public abstract class BaseHuskySequenceCoder<X extends CharSequence> implements HuskySequenceCoder<X> {
+public abstract class BaseHuskySequenceCoder<X extends CharSequence> implements HuskySequenceCoder<X>
+{
 
     /**
      * Method to determine if this Husky Coder is perfect for a sequence of the given length.
@@ -13,7 +14,8 @@ public abstract class BaseHuskySequenceCoder<X extends CharSequence> implements 
      * @param length the length of a particular String.
      * @return true if length <= maxLength.
      */
-    public final boolean perfectForLength(final int length) {
+    public final boolean perfectForLength(final int length)
+    {
         return length <= maxLength;
     }
 
@@ -23,7 +25,8 @@ public abstract class BaseHuskySequenceCoder<X extends CharSequence> implements 
      * @param name      the name of this coder.
      * @param maxLength the maximum length of a sequence which can be perfectly encoded.
      */
-    public BaseHuskySequenceCoder(final String name, final int maxLength) {
+    public BaseHuskySequenceCoder(final String name, final int maxLength)
+    {
         this.name = name;
         this.maxLength = maxLength;
     }
@@ -31,7 +34,8 @@ public abstract class BaseHuskySequenceCoder<X extends CharSequence> implements 
     /**
      * @return the name of this coder.
      */
-    final public String name() {
+    final public String name()
+    {
         return name;
     }
 
@@ -42,10 +46,12 @@ public abstract class BaseHuskySequenceCoder<X extends CharSequence> implements 
      * @return an array of longs corresponding to the the Husky codes of the X elements.
      */
     @Override
-    final public Coding huskyEncode(final X[] xs) {
+    public Coding huskyEncode(final X[] xs)
+    {
         boolean isPerfect = true;
         final long[] result = new long[xs.length];
-        for (int i = 0; i < xs.length; i++) {
+        for (int i = 0; i < xs.length; i++)
+        {
             final X x = xs[i];
             if (isPerfect) isPerfect = perfectForLength(x.length());
             result[i] = huskyEncode(x);
@@ -60,12 +66,14 @@ public abstract class BaseHuskySequenceCoder<X extends CharSequence> implements 
      * @return false.
      */
     @Override
-    final public boolean perfect() {
+    final public boolean perfect()
+    {
         return false;
     }
 
     @Override
-    final public String toString() {
+    final public String toString()
+    {
         return "BaseHuskySequenceCoder{" +
                 "name='" + name + '\'' +
                 '}';
