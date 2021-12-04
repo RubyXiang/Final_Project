@@ -89,7 +89,7 @@ public class MSD {
         return v.length() < w.length();
     }
 
-    public static List<String> msdSort(List<String> a){
+    public List<String> msdSort(List<String> a){
         String[] pinyin = new String[a.size()];
         int i = 0;
         List<String> out = new ArrayList<>();
@@ -108,7 +108,7 @@ public class MSD {
         return out;
     }
 
-    public static void inputAndOutput() throws IOException {
+    public void inputAndOutput() throws IOException {
         List<String> input = Input.readTxtFileIntoStringArrList("shuffledChinese.txt");
         List<String> output = msdSort(input);
         File f = new File("MSDOutput.txt");

@@ -85,6 +85,7 @@ public class sort_BenchmarkTimer {
         System.out.println("Dual-pivot Quicksort time taken: " + benchmarkTimer_dp.runFromSupplier(supplier_twice, m) + " with 2M names");
         System.out.println("Dual-pivot Quicksort time taken: " + benchmarkTimer_dp.runFromSupplier(supplier_four, m) + " with 4M names");
 
+        /**
         // Timsort
         System.out.println("----------time Timsort-------------");
         Timsort tim = new Timsort();
@@ -97,7 +98,7 @@ public class sort_BenchmarkTimer {
         System.out.println("Timsort time taken: " + benchmarkTimer_tim.runFromSupplier(supplier_origin, m) + " with 1M names");
         System.out.println("Timsort time taken: " + benchmarkTimer_tim.runFromSupplier(supplier_twice, m) + " with 2M names");
         System.out.println("Timsort time taken: " + benchmarkTimer_tim.runFromSupplier(supplier_four, m) + " with 4M names");
-
+**/
         }
 
 

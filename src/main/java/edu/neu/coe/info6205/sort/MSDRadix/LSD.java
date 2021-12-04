@@ -1,5 +1,10 @@
 package edu.neu.coe.info6205.sort.MSDRadix;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.util.ArrayList;
 import java.util.List;
 
 public class LSD {
@@ -73,28 +78,42 @@ public class LSD {
         sort(strArr, 0, strArr.length - 1);
     }
 
-    public static void main(String[] args){
-        LSD lsd = new LSD();
-        List<String> a = Input.readTxtFileIntoStringArrList("/Users/Evelyn/info_6205_final/shuffledChinese.txt");
-
-
+    public List<String> lsdSort(List<String> a){
         String[] pinyin = new String[a.size()];
         int i = 0;
+        List<String> out = new ArrayList<>();
         Hanyu hanyu = new Hanyu();
         for(String name : a){
             pinyin[i++] = hanyu.getStringPinYin(name) + "," + i;
         }
 
-        lsd.sort(pinyin);
+        sort(pinyin);
 
         for(String name : pinyin){
             int index = Integer.valueOf(name.split(",")[1]);
-            System.out.println(a.get(index-1));
+            out.add(a.get(index-1));
         }
-//        for(int n =0; n< 50;i++){
-//            System.out.println(pinyin[n]);
-//        }
 
+        return out;
     }
+
+    public void inputAndOutput() throws IOException {
+        List<String> input = Input.readTxtFileIntoStringArrList("shuffledChinese.txt");
+        List<String> output = lsdSort(input);
+        File f = new File("LSDOutput.txt");
+        FileOutputStream fos = new FileOutputStream(f);
+        OutputStreamWriter dos = new OutputStreamWriter(fos);
+        for(String name: output){
+            dos.write(name + '\n');
+        }
+        dos.close();
+    }
+
+
+    public static void main(String[] args) throws IOException {
+        LSD lsd = new LSD();
+        lsd.inputAndOutput();
+    }
+
 }
 
