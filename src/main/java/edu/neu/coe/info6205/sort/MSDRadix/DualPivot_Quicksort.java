@@ -76,7 +76,7 @@ public class DualPivot_Quicksort {
         return true;
     }
 
-    public static List<String> dpSort(List<String> a){
+    public List<String> dpSort(List<String> a){
         String[] pinyin = new String[a.size()];
         int i = 0;
         List<String> out = new ArrayList<>();
@@ -95,7 +95,7 @@ public class DualPivot_Quicksort {
         return out;
     }
 
-    public static void inputAndOutput() throws IOException {
+    public void inputAndOutput() throws IOException {
         List<String> input = Input.readTxtFileIntoStringArrList("shuffledChinese.txt");
         List<String> output = dpSort(input);
         File f = new File("DualPivot_QuicksortOutput.txt");
