@@ -1,4 +1,6 @@
 package edu.neu.coe.info6205.sort.MSDRadix;
+import java.io.*;
+import java.util.ArrayList;
 import java.util.List;
 
 public class MSD {
@@ -87,31 +89,41 @@ public class MSD {
         return v.length() < w.length();
     }
 
-    /**
-     * Reads in a sequence of extended ASCII strings from standard input;
-     * MSDRadix.MSD radix sorts them;
-     * and prints them to standard output in ascending order.
-     *
-     * @param args the command-line arguments
-     */
-    public static void main(String[] args){
-        MSD msd = new MSD();
-        List<String> a = Input.readTxtFileIntoStringArrList("/Users/Evelyn/info_6205_final/shuffledChinese.txt");
-
-
+    public static List<String> msdSort(List<String> a){
         String[] pinyin = new String[a.size()];
         int i = 0;
+        List<String> out = new ArrayList<>();
         Hanyu hanyu = new Hanyu();
         for(String name : a){
             pinyin[i++] = hanyu.getStringPinYin(name) + "," + i;
         }
 
-        msd.sort(pinyin);
+        sort(pinyin);
 
         for(String name : pinyin){
             int index = Integer.valueOf(name.split(",")[1]);
-            System.out.println(a.get(index-1));
+            out.add(a.get(index-1));
         }
 
+        return out;
     }
+
+    public static void inputAndOutput() throws IOException {
+        List<String> input = Input.readTxtFileIntoStringArrList("shuffledChinese.txt");
+        List<String> output = msdSort(input);
+        File f = new File("MSDOutput.txt");
+        FileOutputStream fos = new FileOutputStream(f);
+        OutputStreamWriter dos = new OutputStreamWriter(fos);
+        for(String name: output){
+            dos.write(name + '\n');
+        }
+        dos.close();
+    }
+
+
+    public static void main(String[] args) throws IOException {
+        MSD msd = new MSD();
+        msd.inputAndOutput();
+    }
+
 }
