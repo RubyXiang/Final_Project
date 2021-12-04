@@ -1,95 +1,116 @@
 package edu.neu.coe.info6205.sort.MSDRadix;
-// credit: https://www.geeksforgeeks.org/dual-pivot-quicksort/
+
+import edu.neu.coe.info6205.graphs.BFS_and_prims.StdRandom;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.util.ArrayList;
+import java.util.List;
+
+// credit: https://algs4.cs.princeton.edu/23quicksort/QuickDualPivot.java.html
 
 public class DualPivot_Quicksort {
-    static void swap(int[] arr, int i, int j)
-    {
-        int temp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = temp;
+
+    // quicksort the array a[] using dual-pivot quicksort
+    public static void sort(Comparable[] a) {
+        StdRandom.shuffle(a);
+        sort(a, 0, a.length - 1);
+        assert isSorted(a);
     }
 
-    static void dualPivotQuickSort(int[] arr,
-                                   int low, int high)
-    {
-        if (low < high)
-        {
+    // quicksort the subarray a[lo .. hi] using dual-pivot quicksort
+    private static void sort(Comparable[] a, int lo, int hi) {
+        if (hi <= lo) return;
 
-            // piv[] stores left pivot and right pivot.
-            // piv[0] means left pivot and
-            // piv[1] means right pivot
-            int[] piv;
-            piv = partition(arr, low, high);
+        // make sure a[lo] <= a[hi]
+        if (less(a[hi], a[lo])) exch(a, lo, hi);
 
-            dualPivotQuickSort(arr, low, piv[0] - 1);
-            dualPivotQuickSort(arr, piv[0] + 1, piv[1] - 1);
-            dualPivotQuickSort(arr, piv[1] + 1, high);
+        int lt = lo + 1, gt = hi - 1;
+        int i = lo + 1;
+        while (i <= gt) {
+            if       (less(a[i], a[lo])) exch(a, lt++, i++);
+            else if  (less(a[hi], a[i])) exch(a, i, gt--);
+            else                         i++;
         }
+        exch(a, lo, --lt);
+        exch(a, hi, ++gt);
+
+        // recursively sort three subarrays
+        sort(a, lo, lt-1);
+        if (less(a[lt], a[gt])) sort(a, lt+1, gt-1);
+        sort(a, gt+1, hi);
+
+        assert isSorted(a, lo, hi);
     }
 
-    static int[] partition(int[] arr, int low, int high)
-    {
-        if (arr[low] > arr[high])
-            swap(arr, low, high);
 
-        // p is the left pivot, and q
-        // is the right pivot.
-        int j = low + 1;
-        int g = high - 1, k = low + 1,
-                p = arr[low], q = arr[high];
 
-        while (k <= g)
-        {
+    /***************************************************************************
+     *  Helper sorting functions.
+     ***************************************************************************/
 
-            // If elements are less than the left pivot
-            if (arr[k] < p)
-            {
-                swap(arr, k, j);
-                j++;
-            }
+    // is v < w ?
+    private static boolean less(Comparable v, Comparable w) {
+        return v.compareTo(w) < 0;
+    }
 
-            // If elements are greater than or equal
-            // to the right pivot
-            else if (arr[k] >= q)
-            {
-                while (arr[g] > q && k < g)
-                    g--;
+    // exchange a[i] and a[j]
+    private static void exch(Object[] a, int i, int j) {
+        Object swap = a[i];
+        a[i] = a[j];
+        a[j] = swap;
+    }
 
-                swap(arr, k, g);
-                g--;
+    /***************************************************************************
+     *  Check if array is sorted - useful for debugging.
+     ***************************************************************************/
+    private static boolean isSorted(Comparable[] a) {
+        return isSorted(a, 0, a.length - 1);
+    }
 
-                if (arr[k] < p)
-                {
-                    swap(arr, k, j);
-                    j++;
-                }
-            }
-            k++;
+    private static boolean isSorted(Comparable[] a, int lo, int hi) {
+        for (int i = lo + 1; i <= hi; i++)
+            if (less(a[i], a[i-1])) return false;
+        return true;
+    }
+
+    public static List<String> dpSort(List<String> a){
+        String[] pinyin = new String[a.size()];
+        int i = 0;
+        List<String> out = new ArrayList<>();
+        Hanyu hanyu = new Hanyu();
+        for(String name : a){
+            pinyin[i++] = hanyu.getStringPinYin(name) + "," + i;
         }
-        j--;
-        g++;
 
-        // Bring pivots to their appropriate positions.
-        swap(arr, low, j);
-        swap(arr, high, g);
+        sort(pinyin);
 
-        // Returning the indices of the pivots
-        // because we cannot return two elements
-        // from a function, we do that using an array.
-        return new int[] { j, g };
+        for(String name : pinyin){
+            int index = Integer.valueOf(name.split(",")[1]);
+            out.add(a.get(index-1));
+        }
+
+        return out;
     }
 
-    // Driver code
-    public static void main(String[] args)
-    {
-        int[] arr = { 24, 8, 42, 75, 29, 77, 38, 57 };
-
-        dualPivotQuickSort(arr, 0, 7);
-
-        System.out.print("Sorted array: ");
-        for (int i = 0; i < 8; i++)
-            System.out.print(arr[i] + " ");
-
-        System.out.println();
+    public static void inputAndOutput() throws IOException {
+        List<String> input = Input.readTxtFileIntoStringArrList("shuffledChinese.txt");
+        List<String> output = dpSort(input);
+        File f = new File("DualPivot_QuicksortOutput.txt");
+        FileOutputStream fos = new FileOutputStream(f);
+        OutputStreamWriter dos = new OutputStreamWriter(fos);
+        for(String name: output){
+            dos.write(name + '\n');
+        }
+        dos.close();
     }
+
+
+    public static void main(String[] args) throws IOException {
+        DualPivot_Quicksort quicksort = new DualPivot_Quicksort();
+        quicksort.inputAndOutput();
+    }
+
 }
