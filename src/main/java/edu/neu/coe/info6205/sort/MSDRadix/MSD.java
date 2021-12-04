@@ -108,10 +108,9 @@ public class MSD {
         return out;
     }
 
-    public static void inputAndSort() throws IOException {
+    public static void inputAndOutput() throws IOException {
         List<String> input = Input.readTxtFileIntoStringArrList("shuffledChinese.txt");
         List<String> output = msdSort(input);
-        //System.out.println(output);
         File f = new File("MSDOutput.txt");
         FileOutputStream fos = new FileOutputStream(f);
         OutputStreamWriter dos = new OutputStreamWriter(fos);
@@ -124,7 +123,7 @@ public class MSD {
 
     public static void main(String[] args) throws IOException {
         MSD msd = new MSD();
-        msd.inputAndSort();
+        msd.inputAndOutput();
     }
 
 }
