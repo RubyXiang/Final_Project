@@ -145,3 +145,63 @@
 2021-12-03 22:05:37 INFO  Benchmark_Timer - Begin run: MSD Sort with 10 runs
 2021-12-03 22:06:20 INFO  Benchmark_Timer - Begin run: MSD Sort with 10 runs
 2021-12-03 22:07:37 INFO  Benchmark_Timer - Begin run: MSD Sort with 10 runs
+2021-12-04 13:58:59 INFO  Benchmark_Timer - Begin run: MSD radix sort with 10 runs
+2021-12-04 13:59:11 INFO  Benchmark_Timer - Begin run: MSD radix sort with 10 runs
+2021-12-04 17:08:12 INFO  Benchmark_Timer - Begin run: MSD radix sort with 10 runs
+2021-12-04 17:08:22 INFO  Benchmark_Timer - Begin run: MSD radix sort with 10 runs
+2021-12-04 17:08:40 INFO  Benchmark_Timer - Begin run: MSD radix sort with 10 runs
+2021-12-04 17:09:15 INFO  Benchmark_Timer - Begin run: MSD radix sort with 10 runs
+2021-12-04 17:10:31 INFO  Benchmark_Timer - Begin run: MSD radix sort with 10 runs
+2021-12-04 17:13:07 INFO  Benchmark_Timer - Begin run: LSD radix sort with 10 runs
+2021-12-04 17:13:22 INFO  Benchmark_Timer - Begin run: LSD radix sort with 10 runs
+2021-12-04 17:13:52 INFO  Benchmark_Timer - Begin run: LSD radix sort with 10 runs
+2021-12-04 17:14:51 INFO  Benchmark_Timer - Begin run: LSD radix sort with 10 runs
+2021-12-04 17:17:04 INFO  Benchmark_Timer - Begin run: LSD radix sort with 10 runs
+2021-12-04 17:21:43 INFO  Benchmark_Timer - Begin run: Dual-pivot Quicksort with 10 runs
+2021-12-04 17:21:53 INFO  Benchmark_Timer - Begin run: Dual-pivot Quicksort with 10 runs
+2021-12-04 17:22:13 INFO  Benchmark_Timer - Begin run: Dual-pivot Quicksort with 10 runs
+2021-12-04 17:22:51 INFO  Benchmark_Timer - Begin run: Dual-pivot Quicksort with 10 runs
+2021-12-04 17:24:12 INFO  Benchmark_Timer - Begin run: Dual-pivot Quicksort with 10 runs
+2021-12-04 18:59:14 INFO  Benchmark_Timer - Begin run: Huskysort with 10 runs
+2021-12-04 18:59:25 INFO  Benchmark_Timer - Begin run: Huskysort with 10 runs
+2021-12-04 18:59:45 INFO  Benchmark_Timer - Begin run: Huskysort with 10 runs
+2021-12-04 19:00:26 INFO  Benchmark_Timer - Begin run: Huskysort with 10 runs
+2021-12-04 19:01:35 INFO  Benchmark_Timer - Begin run: Huskysort with 10 runs
+2021-12-04 21:55:43 DEBUG Config - Config.get(helper, instrument) = true
+2021-12-04 21:55:43 DEBUG Config - Config.get(helper, seed) = 0
+2021-12-04 21:55:43 DEBUG Config - Config.get(instrumenting, copies) = true
+2021-12-04 21:55:43 DEBUG Config - Config.get(instrumenting, swaps) = true
+2021-12-04 21:55:43 DEBUG Config - Config.get(instrumenting, compares) = true
+2021-12-04 21:55:43 DEBUG Config - Config.get(instrumenting, inversions) = 1
+2021-12-04 21:55:43 DEBUG Config - Config.get(instrumenting, fixes) = true
+2021-12-04 21:55:43 DEBUG Config - Config.get(instrumenting, hits) = true
+2021-12-04 21:55:43 DEBUG Config - Config.get(helper, cutoff) = 
+2021-12-04 21:56:51 DEBUG Config - Config.get(helper, instrument) = true
+2021-12-04 21:56:51 DEBUG Config - Config.get(helper, seed) = 0
+2021-12-04 21:56:51 DEBUG Config - Config.get(instrumenting, copies) = true
+2021-12-04 21:56:51 DEBUG Config - Config.get(instrumenting, swaps) = true
+2021-12-04 21:56:51 DEBUG Config - Config.get(instrumenting, compares) = true
+2021-12-04 21:56:51 DEBUG Config - Config.get(instrumenting, inversions) = 1
+2021-12-04 21:56:51 DEBUG Config - Config.get(instrumenting, fixes) = true
+2021-12-04 21:56:51 DEBUG Config - Config.get(instrumenting, hits) = true
+2021-12-04 21:56:51 DEBUG Config - Config.get(helper, cutoff) = 
+2021-12-05 03:38:45 INFO  Benchmark_Timer - Begin run: MSD radix sort with 10 runs
+2021-12-05 03:38:55 INFO  Benchmark_Timer - Begin run: MSD radix sort with 10 runs
+2021-12-05 03:39:13 INFO  Benchmark_Timer - Begin run: MSD radix sort with 10 runs
+2021-12-05 03:39:48 INFO  Benchmark_Timer - Begin run: MSD radix sort with 10 runs
+2021-12-05 03:41:03 INFO  Benchmark_Timer - Begin run: MSD radix sort with 10 runs
+2021-12-05 03:43:42 INFO  Benchmark_Timer - Begin run: LSD radix sort with 10 runs
+2021-12-05 03:43:57 INFO  Benchmark_Timer - Begin run: LSD radix sort with 10 runs
+2021-12-05 03:44:27 INFO  Benchmark_Timer - Begin run: LSD radix sort with 10 runs
+2021-12-05 03:45:23 INFO  Benchmark_Timer - Begin run: LSD radix sort with 10 runs
+2021-12-05 03:47:23 INFO  Benchmark_Timer - Begin run: LSD radix sort with 10 runs
+2021-12-05 03:51:59 INFO  Benchmark_Timer - Begin run: Dual-pivot Quicksort with 10 runs
+2021-12-05 03:52:09 INFO  Benchmark_Timer - Begin run: Dual-pivot Quicksort with 10 runs
+2021-12-05 03:52:28 INFO  Benchmark_Timer - Begin run: Dual-pivot Quicksort with 10 runs
+2021-12-05 03:53:08 INFO  Benchmark_Timer - Begin run: Dual-pivot Quicksort with 10 runs
+2021-12-05 03:54:27 INFO  Benchmark_Timer - Begin run: Dual-pivot Quicksort with 10 runs
+2021-12-05 03:57:20 INFO  Benchmark_Timer - Begin run: Huskysort with 10 runs
+2021-12-05 03:57:30 INFO  Benchmark_Timer - Begin run: Huskysort with 10 runs
+2021-12-05 03:57:47 INFO  Benchmark_Timer - Begin run: Huskysort with 10 runs
+2021-12-05 03:58:20 INFO  Benchmark_Timer - Begin run: Huskysort with 10 runs
+2021-12-05 03:59:30 INFO  Benchmark_Timer - Begin run: Huskysort with 10 runs

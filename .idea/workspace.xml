@@ -4,21 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c394dff-8290-4629-ae7b-7fef615fdd7b" name="Changes" comment="add huskysort">
-      <change afterPath="$PROJECT_DIR$/sortedChinese.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/edu/neu/coe/info6205/sort/MSDRadix/DualPivot_QuicksortTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/edu/neu/coe/info6205/sort/MSDRadix/LSDTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/edu/neu/coe/info6205/sort/MSDRadix/MSDTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/edu/neu/coe/info6205/sort/MSDRadix/huskysort/huskySort/PureHuskySortTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unsortedChinese.txt" afterDir="false" />
+    <list default="true" id="7c394dff-8290-4629-ae7b-7fef615fdd7b" name="Changes" comment="finish unit test for 4 sorting algorithms">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/info6205.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/info6205.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/sort/MSDRadix/Timsort.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/util/sort_BenchmarkTimer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/util/sort_BenchmarkTimer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/neu/coe/info6205/sort/MSDRadix/huskysort/huskySort/PureHuskySortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/neu/coe/info6205/sort/MSDRadix/huskysort/huskySort/PureHuskySortTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/edu/neu/coe/info6205/sort/MSDRadix/DualPivot_Quicksort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/neu/coe/info6205/sort/MSDRadix/DualPivot_Quicksort.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/edu/neu/coe/info6205/sort/MSDRadix/LSD.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/neu/coe/info6205/sort/MSDRadix/LSD.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/edu/neu/coe/info6205/sort/MSDRadix/MSD.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/neu/coe/info6205/sort/MSDRadix/MSD.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/neu/coe/info6205/sort/MSDRadix/Timsort.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,8 +24,18 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="21rQ1Wj2Y2vtaBmX8m45iCtHZKg" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -48,17 +50,31 @@
       <recent name="edu.neu.coe.info6205.sort.MSDRadix" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PureHuskySortTest">
-    <configuration name="DualPivot_QuicksortTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.DualPivot_QuicksortTest">
+    <configuration name="LSD" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.neu.coe.info6205.sort.MSDRadix.LSD" />
       <module name="info_6205_finalProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="edu.neu.coe.info6205.sort.MSDRadix.huskysort.huskySort.*" />
+          <option name="PATTERN" value="edu.neu.coe.info6205.sort.MSDRadix.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DualPivot_QuicksortTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="info_6205_finalProject" />
+      <extension name="coverage" sample_coverage="false">
+        <pattern>
+          <option name="PATTERN" value="edu.neu.coe.info6205.sort.MSDRadix.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="edu.neu.coe.info6205.sort.MSDRadix" />
       <option name="MAIN_CLASS_NAME" value="edu.neu.coe.info6205.sort.MSDRadix.DualPivot_QuicksortTest" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -66,45 +82,31 @@
     </configuration>
     <configuration name="LSDTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="info_6205_finalProject" />
-      <extension name="coverage">
+      <extension name="coverage" sample_coverage="false">
         <pattern>
-          <option name="PATTERN" value="edu.neu.coe.info6205.sort.MSDRadix.huskysort.huskySort.*" />
+          <option name="PATTERN" value="edu.neu.coe.info6205.sort.MSDRadix.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="edu.neu.coe.info6205.sort.MSDRadix" />
       <option name="MAIN_CLASS_NAME" value="edu.neu.coe.info6205.sort.MSDRadix.LSDTest" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LSDTest.sort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="info_6205_finalProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.neu.coe.info6205.sort.MSDRadix.huskysort.huskySort.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="edu.neu.coe.info6205.sort.MSDRadix" />
-      <option name="MAIN_CLASS_NAME" value="edu.neu.coe.info6205.sort.MSDRadix.LSDTest" />
-      <option name="METHOD_NAME" value="sort" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="MSDTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="info_6205_finalProject" />
-      <extension name="coverage">
+      <extension name="coverage" sample_coverage="false">
         <pattern>
-          <option name="PATTERN" value="edu.neu.coe.info6205.sort.MSDRadix.huskysort.huskySort.*" />
+          <option name="PATTERN" value="edu.neu.coe.info6205.sort.MSDRadix.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="edu.neu.coe.info6205.sort.MSDRadix" />
       <option name="MAIN_CLASS_NAME" value="edu.neu.coe.info6205.sort.MSDRadix.MSDTest" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -112,7 +114,7 @@
     </configuration>
     <configuration name="PureHuskySortTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="info_6205_finalProject" />
-      <extension name="coverage">
+      <extension name="coverage" sample_coverage="false">
         <pattern>
           <option name="PATTERN" value="edu.neu.coe.info6205.sort.MSDRadix.huskysort.huskySort.*" />
           <option name="ENABLED" value="true" />
@@ -120,22 +122,46 @@
       </extension>
       <option name="PACKAGE_NAME" value="edu.neu.coe.info6205.sort.MSDRadix.huskysort.huskySort" />
       <option name="MAIN_CLASS_NAME" value="edu.neu.coe.info6205.sort.MSDRadix.huskysort.huskySort.PureHuskySortTest" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.LSD" />
+      <item itemvalue="JUnit.DualPivot_QuicksortTest" />
+      <item itemvalue="JUnit.LSDTest" />
+      <item itemvalue="JUnit.MSDTest" />
+      <item itemvalue="JUnit.PureHuskySortTest" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PureHuskySortTest" />
-        <item itemvalue="JUnit.DualPivot_QuicksortTest" />
         <item itemvalue="JUnit.LSDTest" />
-        <item itemvalue="JUnit.LSDTest.sort" />
+        <item itemvalue="JUnit.DualPivot_QuicksortTest" />
+        <item itemvalue="JUnit.PureHuskySortTest" />
         <item itemvalue="JUnit.MSDTest" />
+        <item itemvalue="Application.LSD" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task id="LOCAL-00001" summary="finish unit test for 4 sorting algorithms">
+      <created>1638683721414</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1638683721414</updated>
+    </task>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7c394dff-8290-4629-ae7b-7fef615fdd7b" name="Changes" comment="finish unit test for 4 sorting algorithms" />
+      <created>1638696511778</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1638696511778</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -150,23 +176,30 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="finish unit test for 4 sorting algorithms" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish unit test for 4 sorting algorithms" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/info_6205_finalProject$LSDTest.ic" NAME="LSDTest Coverage Results" MODIFIED="1638682286681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/info_6205_finalProject$LSDTest.ic" NAME="LSDTest Coverage Results" MODIFIED="1638724731258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true">
       <FILTER>edu.neu.coe.info6205.sort.MSDRadix.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/info_6205_finalProject$MSDStringSortTest.ic" NAME="MSDStringSortTest Coverage Results" MODIFIED="1638672844775" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>edu.neu.coe.info6205.sort.counting.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/info_6205_finalProject$DualPivot_QuicksortTest.ic" NAME="DualPivot_QuicksortTest Coverage Results" MODIFIED="1638682540267" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>edu.neu.coe.info6205.sort.MSDRadix.*</FILTER>
+    <SUITE FILE_PATH="coverage/info_6205_finalProject$DualPivot_QuicksortTest.ic" NAME="DualPivot_QuicksortTest Coverage Results" MODIFIED="1638723431921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>edu.neu.coe.info6205.sort.MSDRadix.huskysort.huskySort.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/info_6205_finalProject$PureHuskySortTest.ic" NAME="PureHuskySortTest Coverage Results" MODIFIED="1638683294390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/info_6205_finalProject$PureHuskySortTest.ic" NAME="PureHuskySortTest Coverage Results" MODIFIED="1638723272669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>edu.neu.coe.info6205.sort.MSDRadix.huskysort.huskySort.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/info_6205_finalProject$InsertionSortTest.ic" NAME="InsertionSortTest Coverage Results" MODIFIED="1638673010826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>edu.neu.coe.info6205.sort.elementary.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/info_6205_finalProject$MSDTest.ic" NAME="MSDTest Coverage Results" MODIFIED="1638681054845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/info_6205_finalProject$MSDTest.ic" NAME="MSDTest Coverage Results" MODIFIED="1638722901909" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>edu.neu.coe.info6205.sort.MSDRadix.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/info_6205_finalProject$LSD.ic" NAME="LSD Coverage Results" MODIFIED="1638696733853" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>edu.neu.coe.info6205.sort.MSDRadix.*</FILTER>
     </SUITE>
   </component>
