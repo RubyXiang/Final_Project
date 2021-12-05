@@ -1,6 +1,8 @@
 package edu.neu.coe.info6205.util;
 
 import edu.neu.coe.info6205.sort.MSDRadix.*;
+import edu.neu.coe.info6205.sort.MSDRadix.huskysort.huskySort.PureHuskySort;
+import edu.neu.coe.info6205.sort.MSDRadix.huskysort.huskySortUtils.HuskyCoderFactory;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -46,13 +48,15 @@ public class sort_BenchmarkTimer {
             return output;
         };
 
+        int m = 10;
+
+
         // MSD_Sort
         System.out.println("----------time MSD Radix Sort-------------");
         MSD msd = new MSD();
 
         Consumer<List<String>> consumer_msd= array->msd.msdSort(array);
         Benchmark_Timer<List<String>> benchmarkTimer_msd = new Benchmark_Timer<List<String>>("MSD radix sort", consumer_msd);
-        int m = 10;
         System.out.println("MSD sort time taken: " + benchmarkTimer_msd.runFromSupplier(supplier_quarter, m) + " with 250k names");
         System.out.println("MSD sort time taken: " + benchmarkTimer_msd.runFromSupplier(supplier_half, m) + " with 500k names");
         System.out.println("MSD sort time taken: " + benchmarkTimer_msd.runFromSupplier(supplier_origin, m) + " with 1M names");
@@ -85,23 +89,20 @@ public class sort_BenchmarkTimer {
         System.out.println("Dual-pivot Quicksort time taken: " + benchmarkTimer_dp.runFromSupplier(supplier_twice, m) + " with 2M names");
         System.out.println("Dual-pivot Quicksort time taken: " + benchmarkTimer_dp.runFromSupplier(supplier_four, m) + " with 4M names");
 
-        /**
-        // Timsort
-        System.out.println("----------time Timsort-------------");
-        Timsort tim = new Timsort();
 
-        Consumer<List<String>> consumer_tim= array->tim.timSort(array);
-        Benchmark_Timer<List<String>> benchmarkTimer_tim = new Benchmark_Timer<List<String>>("Timsort", consumer_tim);
+        // Huskysort
+        System.out.println("----------time Huskysort-------------");
+        PureHuskySort<String> husky = new PureHuskySort<>(HuskyCoderFactory.asciiCoder, false, false);
 
-        System.out.println("Timsort time taken: " + benchmarkTimer_tim.runFromSupplier(supplier_quarter, m) + " with 250k names");
-        System.out.println("Timsort time taken: " + benchmarkTimer_tim.runFromSupplier(supplier_half, m) + " with 500k names");
-        System.out.println("Timsort time taken: " + benchmarkTimer_tim.runFromSupplier(supplier_origin, m) + " with 1M names");
-        System.out.println("Timsort time taken: " + benchmarkTimer_tim.runFromSupplier(supplier_twice, m) + " with 2M names");
-        System.out.println("Timsort time taken: " + benchmarkTimer_tim.runFromSupplier(supplier_four, m) + " with 4M names");
-**/
+        Consumer<List<String>> consumer_husky= array->husky.huskySort(array);
+        Benchmark_Timer<List<String>> benchmarkTimer_husky = new Benchmark_Timer<List<String>>("Huskysort", consumer_husky);
+
+        System.out.println("Huskysort time taken: " + benchmarkTimer_husky.runFromSupplier(supplier_quarter, m) + " with 250k names");
+        System.out.println("Huskysort time taken: " + benchmarkTimer_husky.runFromSupplier(supplier_half, m) + " with 500k names");
+        System.out.println("Huskysort time taken: " + benchmarkTimer_husky.runFromSupplier(supplier_origin, m) + " with 1M names");
+        System.out.println("Huskysort time taken: " + benchmarkTimer_husky.runFromSupplier(supplier_twice, m) + " with 2M names");
+        System.out.println("Huskysort time taken: " + benchmarkTimer_husky.runFromSupplier(supplier_four, m) + " with 4M names");
         }
-
-
 
 }
 
