@@ -8,7 +8,7 @@ Unit Test Classes: info_6205_finalProject/src/test/java/edu/neu/coe/info6205/sor
 Project: finalProjectReport.pdf
 Paper: In-place MSD Radix Sort for Text Data.pdf
 
-Input class: read in file from given file path and put names in a list.
+Input class: read in file from given file path and put names in a list.<br>
 Hanyu class: convert Chinese to pinyin
 
 All resourses from the internet are noted in the code.
