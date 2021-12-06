@@ -1,4 +1,4 @@
-Final Project
+<h2>Final Project</h2>
 
 Build based on the class repo.
 
