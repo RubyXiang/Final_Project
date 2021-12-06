@@ -1,7 +1,10 @@
-package edu.neu.coe.info6205.sort.MSDRadix;
+package edu.neu.coe.info6205.sort.finalProjectSorts;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
+
+// credit: https://algs4.cs.princeton.edu/51radix/MSD.java.html, has been modified
+// add new methods: msdSort, inputAndOutput.
 
 public class MSD {
     private static final int R             = 256;   // extended ASCII alphabet size

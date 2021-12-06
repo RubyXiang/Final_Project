@@ -1,4 +1,4 @@
-package edu.neu.coe.info6205.sort.MSDRadix;
+package edu.neu.coe.info6205.sort.finalProjectSorts;
 
 import edu.neu.coe.info6205.graphs.BFS_and_prims.StdRandom;
 
@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 // credit: https://algs4.cs.princeton.edu/23quicksort/QuickDualPivot.java.html
+// add new methods: dpSort, inputAndOutput.
 
 public class DualPivot_Quicksort {
 

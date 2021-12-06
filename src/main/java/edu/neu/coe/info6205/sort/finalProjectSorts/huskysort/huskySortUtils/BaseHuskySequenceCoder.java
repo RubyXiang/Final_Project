@@ -1,4 +1,4 @@
-package edu.neu.coe.info6205.sort.MSDRadix.huskysort.huskySortUtils;
+package edu.neu.coe.info6205.sort.finalProjectSorts.huskysort.huskySortUtils;
 
 /**
  * Base Husky sequence coder.

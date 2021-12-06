@@ -1,4 +1,4 @@
-package edu.neu.coe.info6205.sort.MSDRadix;
+package edu.neu.coe.info6205.sort.finalProjectSorts;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -6,6 +6,9 @@ import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 import java.util.List;
+
+// credit: from class repo, and has been modified
+// add new methods: lsdSort, inputAndOutput.
 
 public class LSD {
 

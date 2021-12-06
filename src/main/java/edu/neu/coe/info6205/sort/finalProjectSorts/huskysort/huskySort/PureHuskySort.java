@@ -1,12 +1,10 @@
-package edu.neu.coe.info6205.sort.MSDRadix.huskysort.huskySort;
+package edu.neu.coe.info6205.sort.finalProjectSorts.huskysort.huskySort;
 
-import edu.neu.coe.info6205.sort.MSDRadix.Hanyu;
-import edu.neu.coe.info6205.sort.MSDRadix.Input;
-import edu.neu.coe.info6205.sort.MSDRadix.MSD;
-import edu.neu.coe.info6205.sort.MSDRadix.huskysort.huskySortUtils.Coding;
-import edu.neu.coe.info6205.sort.MSDRadix.huskysort.huskySortUtils.HuskyCoder;
-import edu.neu.coe.info6205.sort.MSDRadix.huskysort.huskySortUtils.HuskyCoderFactory;
-import edu.neu.coe.info6205.sort.MSDRadix.huskysort.huskySortUtils.HuskySortHelper;
+import edu.neu.coe.info6205.sort.finalProjectSorts.Hanyu;
+import edu.neu.coe.info6205.sort.finalProjectSorts.Input;
+import edu.neu.coe.info6205.sort.finalProjectSorts.huskysort.huskySortUtils.Coding;
+import edu.neu.coe.info6205.sort.finalProjectSorts.huskysort.huskySortUtils.HuskyCoder;
+import edu.neu.coe.info6205.sort.finalProjectSorts.huskysort.huskySortUtils.HuskyCoderFactory;
 import edu.neu.coe.info6205.sort.elementary.InsertionSort;
 import edu.neu.coe.info6205.util.LazyLogger;
 
@@ -21,6 +19,9 @@ import java.util.Collections;
 import java.util.List;
 
 import static java.util.Arrays.binarySearch;
+
+// credit: https://github.com/rchillyard/The-repository-formerly-known-as, has been modified
+// add new methods: huskySort, inputAndOutput.
 
 /**
  * This class represents the purest form of Husky Sort based on IntroSort for pass 1 and the System sort for pass 2.

@@ -1,8 +1,8 @@
 package edu.neu.coe.info6205.util;
 
-import edu.neu.coe.info6205.sort.MSDRadix.*;
-import edu.neu.coe.info6205.sort.MSDRadix.huskysort.huskySort.PureHuskySort;
-import edu.neu.coe.info6205.sort.MSDRadix.huskysort.huskySortUtils.HuskyCoderFactory;
+import edu.neu.coe.info6205.sort.finalProjectSorts.*;
+import edu.neu.coe.info6205.sort.finalProjectSorts.huskysort.huskySort.PureHuskySort;
+import edu.neu.coe.info6205.sort.finalProjectSorts.huskysort.huskySortUtils.HuskyCoderFactory;
 
 import java.util.ArrayList;
 import java.util.List;
